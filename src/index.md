@@ -27,13 +27,14 @@ There are many resouces for using and learning the Nachos system. Essential are 
 - [Nachos Road Map](http://www.cs.duke.edu/~narten/110/nachos/main/main.html) [ [PDF](./pdf/narten.pdf) ]
 - [Guide To Reading The Nachos Source](http://people.cs.uchicago.edu/~odonnell/OData/Courses/CS230/NACHOS/reading-code.html)
 - [The Nachos Home Page](http://homes.cs.washington.edu/~tom/nachos/)
+- [Nachos System Call Interface](./syscall.html) (a good reference to
+    the core classes and their interfaces in the nachos implementation
+    distributions.)
 
 <!-- - [Nachos Internals] -->
 <!-- TODO: need to update these links -->
 <!-- Working With Nachos (notes on various practical aspects of using Nachos) -->
 <!-- Working With Your Team (suggestions on team management) -->
-<!-- Nachos System Call Interface (a good reference to the core classes and their interfaces in the nachos implementation)
-Distributions -->
 
 The platform we will officially support is Linux/x86 on the machines in the CSE B230-B270 labs. We have customized the generic Nachos distribution for the CSE 120 class, so you should use the version of Nachos that we make available (i.e., do not download from other sites on the Web). The Nachos distribution file can be found on [github](https://github.com/h8liu/nachos). 
 

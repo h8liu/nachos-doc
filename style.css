@@ -5,6 +5,7 @@ body {
     font-size: .15in;
     margin-left: .2in;
     margin-right: .2in;
+    margin-bottom: .2in;
 }
 
 div.labbody {
@@ -69,3 +70,11 @@ h2 {
     margin-top: .4in;
 }
 h3 { font-size: .23in; }
+
+div.footer {
+    text-align: right;
+    margin-top: .5in;
+}
+div.footer a {
+    color: #999;
+}

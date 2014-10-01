@@ -1,4 +1,4 @@
-all: p0.html index.html
+all: p0.html index.html syscall.html
 
 %.html: src/%.md
 	mkdir -p _

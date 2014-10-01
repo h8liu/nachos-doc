@@ -78,3 +78,9 @@ div.footer {
 div.footer a {
     color: #999;
 }
+
+hr {
+    border: 0;
+    border-bottom: 1px #ccc solid;
+    width: 100%;
+}

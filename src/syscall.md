@@ -20,7 +20,7 @@ user process struggle forward.
 ## Process Management
 
 ```
-SpaceId Exec (char *executable, int pipectrl)
+SpaceId Exec(char *executable, int pipectrl)
 ```
 
 **need update** Create a user process by creating a new address space,
@@ -48,7 +48,7 @@ parameter for Lab 4; save it for Lab 5.
 ---
 
 ```
-void Exit (int status)
+void Exit(int status)
 ```
 
 A user process calls Exit to indicate that it is finished and ready to
@@ -75,11 +75,11 @@ startup instruction sequence in test/start.s .
 ---
 
 ```
-int Join (SpaceId joineeId)
+int Join(SpaceId joineeId)
 ```
 
-This is called by a process (the joiner ) to wait for the termination
-of the process (the joinee ) whose SpaceId is given by the joineeId
+This is called by a process (the joiner) to wait for the termination
+of the process (the joinee) whose SpaceId is given by the joineeId
 argument. If the joinee is still active, then Join blocks until the
 joinee exits. When the joinee has exited, Join returns the joinee's
 exit status to the joiner. To simplify the implementation, impose the
@@ -91,7 +91,7 @@ basically equivalent to the Unix wait system call.
 ## Files and I/O
 
 ```
-void Create (char *filename)
+void Create(char *filename)
 ```
 
 Create an empty file named filename . Note this differs from the
@@ -102,7 +102,7 @@ created file for writing.
 ---
 
 ```
-OpenFileId Open (char *filename)
+OpenFileId Open(char *filename)
 ```
 
 Open the file named filename and return an OpenFileId to be used as a
@@ -115,7 +115,7 @@ not specify any access mode (open for writing, open for reading, etc.)
 ---
 
 ```
-void Write (char *buffer, int size, OpenFileId id)
+void Write(char *buffer, int size, OpenFileId id)
 ```
 
 Write size bytes of the data in the buffer to the open file identified by id.
@@ -123,7 +123,7 @@ Write size bytes of the data in the buffer to the open file identified by id.
 ---
 
 ```
-int Read (char *buffer, int size, OpenFileId id)
+int Read(char *buffer, int size, OpenFileId id)
 ```
 
 Try to read size bytes into the user buffer . Return the number of
@@ -133,7 +133,7 @@ requested, e.g., if there are fewer than size bytes available.
 ---
 
 ```
-void Close (OpenFileId id)
+void Close(OpenFileId id)
 ```
 
 Clean up the "bookkeeping" data structures representing the open file.

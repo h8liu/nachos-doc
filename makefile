@@ -1,4 +1,4 @@
-all: p0.html guide.html
+all: p0.html index.html
 
 %.html: src/%.md
 	mkdir -p _

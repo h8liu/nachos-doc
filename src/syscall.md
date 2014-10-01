@@ -188,7 +188,7 @@ from Join .
 ---
 
 ```
-void Fork (void(*function)())
+void Fork(void(*function)())
 ```
 
 Creates a new thread of control executing in the calling user process

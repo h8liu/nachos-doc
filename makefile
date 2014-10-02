@@ -1,9 +1,7 @@
 all: p0.html index.html syscall.html
 
-%.html: src/%.md
-	mkdir -p _
-	gogfm -q $^ > _/$@
-	cat inc/header.html _/$@ inc/footer.html > $@
+%.html: src/%.html
+	cat inc/header.html $^ inc/footer.html > $@
 
 .PHONY: all ci
 
